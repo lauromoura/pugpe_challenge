@@ -33,6 +33,11 @@ class Desafio1(unittest.TestCase):
         self.assertEqual([['a','a','a','a'],['b'],['c','c'],['a','a'],['d'],['e','e','e','e']],
                     pack(sampleList))
 
+    def test_pack_empty(self):
+        self.assertEqual([], pack([]))
+
+    def test_pack_simple(self):
+        self.assertEqual([['a'], ['b'], ['c']], pack(['a', 'b', 'c']))
 
 if __name__ == '__main__':
     unittest.main()    

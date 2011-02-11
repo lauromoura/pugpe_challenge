@@ -25,6 +25,9 @@ Problema:
 
 import unittest
 
+def pack(items):
+    import itertools
+    return [[y for y in v] for k, v in itertools.groupby(items)]
 
 class Desafio1(unittest.TestCase):
 

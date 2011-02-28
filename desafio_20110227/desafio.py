@@ -34,6 +34,11 @@ O objetivo deste problema eh converter uma lista de elementos em uma lista de tu
 import unittest
 
 
+def tuplify(n):
+    '''Returns a list of 2-tuples from the provided data'''
+    return zip(n[::2], n[1::2]) or None
+
+
 class Desafio2(unittest.TestCase):
 
     def test_empty_list(self):

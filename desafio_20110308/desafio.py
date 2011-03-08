@@ -39,6 +39,8 @@ O objetivo deste problema eh transpor uma matriz.
 
 import unittest
 
+def transpose(n):
+    return map(list, zip(*n))
 
 class Desafio4(unittest.TestCase):
 
